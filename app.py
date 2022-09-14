@@ -19,7 +19,7 @@ JOBS = [
     'id': 3,
     'title': 'SWE 2',
     'location': 'Chicago, IL',
-    'salary': '$ 75,000'
+    'salary': '$ 175,000'
   },
   {
     'id': 4,
