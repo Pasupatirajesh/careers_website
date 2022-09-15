@@ -7,16 +7,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-  </head>
+</head>
   <body>
+    
+   {% include 'nav.html' %}
+     <img class="img-fluid" id="banner" src="https://careerswebsite.pasupatirajesh.repl.co/static/gg.jpg"> 
     <div class="container">
-    <h1 class="text-center"> {{company_name}} Website </h1>
-    <img class="img-fluid" id="banner" src="https://careerswebsite.pasupatirajesh.repl.co/static/gg.jpg">
-    <h2 class="text-center"> About Careers</h2>
+    <h1 class="text-center"> {{company_name}} Careers</h1>
+  <div class='row' style="margin-bottom:16px">
+  <div class='col-md-6'>
+      
     <p class="lead">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h2 class="text-center mt-2 b-4"> Job Openings</h2>
+    </div>
+    
+      <div class='d-none d-md-block col-md-6'>
+        <img src="/static/sp.jpg" style="height:360px; width:100%; border-radius: 4px;">
+        </div
+      
+    <h2 class="text-center mt-2 mb-4"> Job Openings</h2>
     <div>
         {% for job in jobs %}
           {% include 'jobitem.html' %}
@@ -25,7 +34,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
     <div class="text-center">
     <Button class="btn btn-primary btn-lg">Contact us</Button>
-      <p class="mt-4"> Copyright 2022, Careers</p>
+<!--       <p class="mt-4"> Copyright 2022, Careers</p> -->
+  {% include 'footer.html' %}
     </div>
     </div>
   </body>
